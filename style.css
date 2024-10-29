@@ -1,0 +1,217 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #63d68f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: -webkit-linear-gradient(left, #4a90e2, #67b26f);
+    background: -moz-linear-gradient(left, #4a90e2, #67b26f);
+    background: linear-gradient(to right, #4a90e2, #67b26f);
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation: headerFadeIn 0.5s ease-in-out;
+    -moz-animation: headerFadeIn 0.5s ease-in-out;
+    animation: headerFadeIn 0.5s ease-in-out;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav {
+    background: #4a90e2;
+    padding: 1rem 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-animation: navFadeIn 0.7s ease-in-out;
+    -moz-animation: navFadeIn 0.7s ease-in-out;
+    animation: navFadeIn 0.7s ease-in-out;
+}
+
+.nav-list {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.3s, -webkit-transform 0.3s, color 0.3s, -webkit-transform 0.3s;
+    -moz-transition: background-color 0.3s, -moz-transform 0.3s, color 0.3s, -moz-transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #67b26f;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    color: #333;
+}
+
+.main-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+    -webkit-animation: contentFadeIn 1s ease-in-out;
+    -moz-animation: contentFadeIn 1s ease-in-out;
+    animation: contentFadeIn 1s ease-in-out;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+    -moz-transition: -moz-transform 0.3s, -moz-box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    -webkit-flex: 1 1 300px;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    margin: 1rem;
+}
+
+.card:hover {
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: cardTitleFadeIn 0.5s ease-in-out;
+    -moz-animation: cardTitleFadeIn 0.5s ease-in-out;
+    animation: cardTitleFadeIn 0.5s ease-in-out;
+}
+
+.card p {
+    -webkit-animation: cardTextFadeIn 0.7s ease-in-out;
+    -moz-animation: cardTextFadeIn 0.7s ease-in-out;
+    animation: cardTextFadeIn 0.7s ease-in-out;
+}
+
+.footer {
+    background: #02645f;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0 0;
+    -webkit-animation: footerFadeIn 0.9s ease-in-out;
+    -moz-animation: footerFadeIn 0.9s ease-in-out;
+    animation: footerFadeIn 0.9s ease-in-out;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-list {
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .card {
+        -webkit-flex: 1 1 100%;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+        max-width: 400px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@supports not (display: flex) {
+    .main-content {
+        display: block;
+    }
+    
+    .card {
+        display: inline-block;
+        width: 100%;
+        max-width: 300px;
+        margin: 1rem;
+    }
+}
+
+.video {
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 180px;
+}
